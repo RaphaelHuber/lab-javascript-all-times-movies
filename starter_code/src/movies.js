@@ -2031,17 +2031,11 @@ function ratesAverage(arr) {
 // Get the average of Drama Movies
 
 function dramaMoviesRate(arr) {
-  let newArr = [];
-  let count = 0;
-  if (genre.includes("Drama")) { 
-    arr.forEach(function(item){
-      count += parseInt(item.rate);
-      newArr.push(item);
-    });
-    return count / newArr.length;
+  let dramaMoviesRateArr = [];
+  if (arr.filter(genre.indexOf("Drama" > -1))) {
+    
   }
 }
-
 // Order by time duration, in growing order
 
 
